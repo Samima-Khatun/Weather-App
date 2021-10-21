@@ -1,0 +1,27 @@
+<%- include("header") -%>
+
+<div
+  class="
+    card
+    text-center
+    position-absolute
+    top-50
+    start-50
+    translate-middle
+    weather-des
+  "
+>
+  <div class="card-body">
+    <h3 class="card-title"><%= city %></h3>
+    <h1 class="card-text">
+      <%= temp %><i class="degree">°<sup>c</sup></i>
+    </h1>
+    <p><%= weatherDescription %></p>
+    <img src="<%= imageUrl %> " class="" alt="..." />
+    <div class="footer">
+      <a class="back-to-home" href="/">CHECK ANOTHER CITY</a>
+    </div>
+  </div>
+</div>
+
+<%- include("footer") -%>
